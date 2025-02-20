@@ -27,19 +27,21 @@ for (let i = 1; i <= rows; i++) {
 // Q2) ['car', 1, 5, 'js', 'node js', 'mysql', 'sql' ] : Use switch statement inside a map function and 
 // console each item by using switch statement.
 
-const items = ['car', 1, 5, 'js', 'node js', 'mysql', 'sql'];
+const items = ['car', 1, 5, 'js', 'node js', 'mysql', 'sql']; 
 items.map(item => {
     switch (typeof item) {
         case 'string':
             console.log('String: ' + item);
-            break;
+            return 'String: ' + item;
         case 'number':
             console.log('Number: ' + item);
-            break;
+            return 'Number: ' + item;
         default:
             console.log('Other: ' + item);
+            return 'Other: ' + item;
     }
 });
+
 
 // Q3)[1, 2, 3, 4, 5, 6] : Write a closure function to delete indexes 5 and 2 of this array.
 
